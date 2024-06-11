@@ -5,20 +5,23 @@
    Static Blog- Infinite Development
 </title>
 <head>
-   <!-- Customize and Clean 5/29/2024 -->
+   <!-- Customized and Cleaned 6/11/2024 -->
    <!-- display alignment 6/2/2024 -->
    <!-- Installed Fonts, installed font family, font size and text size 6/4/2024 6/5/2024 -->
    <!-- 6/5/2024 Inserted html for drp dwn nav- insert css -->
    <!-- 6/6/2024 Nav bar demo installed -->
    <!-- 6/7/2024 Update to drpdwncontent css, fix italics -->
+   <!-- 6/11/2024 Final and complete home page -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
    <style>
       body{background-color:E5E4E2;}
+      
       .navbar{background-color:343434;
       overflow:hidden;
       width:670px;}
+      
       .navbar a{float:left;
       font-size:16px;
       color:white;
@@ -26,35 +29,47 @@
       padding:14px 16px;
       text-decoration:none;
       font-family:permanent marker;}
+      
       .drpdwn{
       float:left;
       overflow:hidden;
       font-family:ubuntu;}
+      
       .drpdwn .drpbtn{font-size:16px;
       border:none;
       outline:none;
-      color:white;
+      color:F7F7F7;
       padding:14px 16px;
       background-color:inherit;
       font-family:ubuntu;
       margin:0;}
+      
+ /* hover over nav */     
       .navbar a:hover, .drpdwn a:hover
-      .drpbtn{background-color:red;}
+      .drpbtn{background-color:F7F7F7;}
+      
       .drpdwncontent{display:none;
       position:absolute;
-      background-color:#f9f9f9;
+      background-color:red;
       min-width:160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-      z-index:1;} 
+      z-index:1;
+      color:black;} 
+      
       drpdwncontent a{float:none;
-      color:black;
+      color:red;
       padding:12px 16px;
       text-decoration:none;
       display:block;
       Text-align:left;
       }     
-      drpdwncontent a:hover{background-color:#ddd;}
-      .drpdwn:hover .drpdwncontent{display:block;}
+      
+      drpdwncontent a:hover{background-color:black;}
+      
+      /* Drop down nav color */
+      .drpdwn:hover .drpdwncontent{display:block;
+      background-color:343434;}
+      
       .div1{background-color:343434;
       height:75px;
       width:670px;
@@ -62,6 +77,7 @@
       Text-align:center;
       font-family:permanent marker;
       font-size:48px;}
+      
       .grid-item{background-color:F7F7F7;
       height:600px;
       width:200px;
@@ -72,6 +88,7 @@
       color:111111;
       position:relative;
       font-family:Ubuntu;}
+      
       .grid-container{display:grid;
       grid-template-columns:auto auto auto;
       }
@@ -82,33 +99,55 @@
       Text-align:center;
       font-family:ubuntu;}
    </style>
+   
 </head>
 <body>
    <!-- Make body background a creme like color, insert photos into grid items, change color of grid to white -->
    <div class="navbar">
+       
       <a href="www.static.com">Home</a>
+      
       <a href="www.static.com/blog">Blog</a>
+      
       <div class="drpdwn">
+          
          <button class="drpbtn">More
-         <i class="fa fa-carat-down"</i>
          </button>
+         
          <div class="drpdwncontent">
+             
             <a href="www.static.com/diets">Routines</a>
+            
             <a href="www.static.com/supplements">Suplements</a>
+            
             <a href="www.static.com/Gear">Gear</a>
+            
          </div>
+         
       </div>
+      
    </div>
+   
    <div class="div1">Static Fitness
    </div>
+   
    <div class="grid-container ">
-      <div class="grid-item"><img src="https://us.123rf.com/450wm/vectorplus/vectorplus1511/vectorplus151100218/47887403-dumbbell-white-icon-with-a-long-shadow-on-a-black-background-vector-illustration.jpg?ver=6" alt="Barbell" height="50" width="200">
+       
+      <div class="grid-item">
+          <img src="https://us.123rf.com/450wm/vectorplus/vectorplus1511/vectorplus151100218/47887403-dumbbell-white-icon-with-a-long-shadow-on-a-black-background-vector-illustration.jpg?ver=6" alt="Barbell" height="50" width="200">
+          
          <span style="font-size:32px; font-family:permanent marker;">About Us</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
       </div>
+      
       <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQMVi73j-dPbwIM3urU0vqze-AAeeSjP_vQ&usqp=CAU" alt="jar" height="50" width="200"><span style="font-size:32px; font-family:permanent marker;">Products</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus in mollis. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur.  
       </div>
-      <div class="grid-item"><img src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-gym-silhouette-symbol-png-image_7670868.png" alt="gear" height="50" width="200"><span style="font-size:32px; font-family:permanent marker;">Gear</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Convallis posuere morbi leo urna molestie at elementum eu.
+      
+      <div class="grid-item">
+          <img src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-gym-silhouette-symbol-png-image_7670868.png" alt="gear" height="50" width="200"><span style="font-size:32px; font-family:permanent marker;">Gear</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Convallis posuere morbi leo urna molestie at elementum eu.
       </div>
+      
    </div>
+   
    <footer> Infinite Development<br> Designed by Terry Rickner</footer>
+   
 </html>
